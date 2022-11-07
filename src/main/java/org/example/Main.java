@@ -12,8 +12,16 @@ public class Main {
         Scanner sc=new Scanner(System.in)
         System.out.println("Uzytkowniku wpisz login" );
         String login=sc.next();
+        if(login.equals(account1.getLogin())){
+            System.out.println("Login poprawny");
+        } else {
+            System.out.println("Login z dupy");
+        }
         System.out.println("podaj kod PIN");
         int pin=sc.nextInt();
+
+
+
 
     }
 
