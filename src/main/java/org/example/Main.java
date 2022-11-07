@@ -9,7 +9,7 @@ public class Main {
 
 
         System.out.println("Witamy w naszym banku");
-        Scanner sc=new Scanner(System.in)
+        Scanner sc=new Scanner(System.in);
         System.out.println("Uzytkowniku wpisz login" );
         String login=sc.next();
         if(login.equals(account1.getLogin())){
@@ -17,8 +17,33 @@ public class Main {
         } else {
             System.out.println("Login z dupy");
         }
+        Scanner sc=new Scanner(System.in)
         System.out.println("podaj kod PIN");
         int pin=sc.nextInt();
+        if (pin==account1.getPin())
+
+
+        System.out.println("MENU - wybierz numerycznie operacje która Cię interesuje");
+        System.out.println( "\n 1. Wpłata  \n 2. Wypłata  \n 3. Sprawdzenie salda \n 4. Kredyt \n 5. Wyjście");
+        System.out.println('Twoj wybor');
+        int wybor=sc.nextInt();
+        switch (wybor){
+            case 1:
+                System.out.println("Wpłata gotówki");
+                break;
+            case 2:
+                System.out.println("WYpłata gotówki");
+                break;
+            case 3:
+                System.out.println("Sprawdzanie salda");
+                break;
+            case 4:
+                System.out.println("kredyt");
+                break;
+            case 5:
+                System.out.println("wyjście");
+        }
+
 
 
 

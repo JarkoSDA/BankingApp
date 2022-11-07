@@ -10,7 +10,7 @@ public class Account {
     private int pin;
 
 
-    Acconut(String name, String lastName, String pesel, String login, String acconutNumber, double balance, int pin){
+    Account(String name, String lastName, String pesel, String login, String acconutNumber, double balance, int pin){
         this.name=name;
         this.lastName=lastName;
         this.pesel=pesel;
@@ -21,7 +21,12 @@ public class Account {
     }
     public String getLogin() {
         return login;
-
+    }
+    public int getPin() {
+        return pin;
+    }
+    public String getAcconutNumber(){
+        return acconutNumber();
     }
 
 
