@@ -10,25 +10,33 @@ public class Account {
     private int pin;
 
 
-    Account(String name, String lastName, String pesel, String login, String acconutNumber, double balance, int pin){
-        this.name=name;
-        this.lastName=lastName;
-        this.pesel=pesel;
-        this.login=login;
-        this.acconutNumber=acconutNumber;
-        this.balance=balance;
-        this.pin=pin
+    Account(String name, String lastName, String pesel, String login, String acconutNumber, double balance, int pin) {
+        this.name = name;
+        this.lastName = lastName;
+        this.pesel = pesel;
+        this.login = login;
+        this.acconutNumber = acconutNumber;
+        this.balance = balance;
+        this.pin = pin;
     }
+
     public String getLogin() {
         return login;
     }
+
     public int getPin() {
         return pin;
     }
-    public String getAcconutNumber(){
-        return acconutNumber();
+
+    public String getAcconutNumber() {
+        return acconutNumber;
     }
 
+    public double withdraw(double cashToGet) {
+        return balance = balance - cashToGet;
+    }
 
-
+    public double getBalance() {
+        return balance;
+    }
 }
