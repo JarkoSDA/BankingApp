@@ -39,4 +39,18 @@ public class Account {
     public double getBalance() {
         return balance;
     }
+    public double deposite(double moneyToDeposite){
+        return balance = balance + moneyToDeposite;
+    }
+    public double credit (double moneyToBorrow){
+
+        double check = balance * 0.1;
+        if (check > moneyToBorrow){
+            return balance += moneyToBorrow;
+        } else {
+            System.out.println("nara biedaku");
+            return balance;
+        }
+
+    }
 }
